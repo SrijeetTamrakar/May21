@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<body>
+			<h2><t/>List Of Games : </h2>
+
+			<p id = "new"> </p>
+
+			<script>
+				var games,i,txt,len;
+
+				var games = ["FIFA" , "COD" , "PUBG"];
+				var len   = games.length;
+
+				txt = "<ol>";
+				for (i=0 ; i<len ; i++)
+				{
+					txt += "<li>" + games[i] + "</li>";
+				}
+				"</ol>";
+				document.getElementById("new").innerHTML = txt;
+			</script>
+		</body>
+	</head>
+</html>
