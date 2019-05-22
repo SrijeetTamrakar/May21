@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<body>
+			<h2> Sorting </h2>
+
+			<button onclick = "f1()"> Alphabetical Sort </button>
+			<button onclick = "f2()"> Numerical Sort </button>
+			<button onclick = "f3()"> Length Of Array </button>
+
+			<p id = "new"> </p> 
+
+			<script>
+				var number = [21,54,2,90,22,5,10,6,3,42];
+				var len = number.length;
+				document.getElementById("new").innerHTML = number;
+
+				function f1()
+				{
+					number.sort();
+					document.getElementById("new").innerHTML = number;
+				}
+
+				function f2()
+				{
+					number.sort(function(a,b){return(a-b)});
+					document.getElementById("new").innerHTML = number;
+				}
+
+				function f3()
+				{
+					document.getElementById("new").innerHTML = "<b>The length of the array is : " + len ;
+				}
+
+			</script>
+		</body>
+	</head>
+</html>
